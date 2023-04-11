@@ -1,0 +1,62 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PackIT.Infrastructure/1.0.0": {
+        "dependencies": {
+          "PackIT.Application": "1.0.0"
+        },
+        "runtime": {
+          "PackIT.Infrastructure.dll": {}
+        }
+      },
+      "PackIT.Application/1.0.0": {
+        "dependencies": {
+          "PackIT.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PackIT.Application.dll": {}
+        }
+      },
+      "PackIT.Domain/1.0.0": {
+        "dependencies": {
+          "PackIT.Shared.Abstractions": "1.0.0"
+        },
+        "runtime": {
+          "PackIT.Domain.dll": {}
+        }
+      },
+      "PackIT.Shared.Abstractions/1.0.0": {
+        "runtime": {
+          "PackIT.Shared.Abstractions.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PackIT.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackIT.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackIT.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PackIT.Shared.Abstractions/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
