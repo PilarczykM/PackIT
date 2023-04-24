@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uiT0ZZaTSiwWskZ3YmEhowunB6WhGbsfq72uWB3FUokx6EEK4Id/gVaM+4vGqPRJmpbT0fevTNLMbmTFOcLWSA==",
+  "dgSpecHash": "HrpAMF9XZaLwKBCI+ibbhXab7Kx22b36EmBaQQQoTOYvshhijnh1RWTXMKKXw+PoSbVRjMs1jHeRrJ8F51Hu0A==",
   "success": true,
-  "projectFilePath": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Domain\\PackIT.Domain.csproj",
+  "projectFilePath": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Domain/PackIT.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

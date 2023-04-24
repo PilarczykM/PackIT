@@ -10,4 +10,35 @@
     <ProjectReference Include="..\PackIT.Shared.Abstractions\PackIT.Shared.Abstractions.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Remove="Repositories\IPackingListRepository.cs" />
+    <Compile Remove="Exceptions\EmptyPackingListItemNameException.cs" />
+    <Compile Remove="Exceptions\EmptyPackingListIdException.cs" />
+    <Compile Remove="Exceptions\PackingItemAlreadyExistsException.cs" />
+    <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
+    <Compile Remove="Exceptions\InvalidTravelDaysException.cs" />
+    <Compile Remove="Exceptions\InvalidTemperatureValuesException.cs" />
+    <Compile Remove="Exceptions\EmptyPackingListNameException.cs" />
+    <Compile Remove="Policies\PolicyData.cs" />
+    <Compile Remove="Policies\IPackingItemsPolicy.cs" />
+    <Compile Remove="Policies\Universal\BasicPolicy.cs" />
+    <Compile Remove="Policies\Gender\FemaleGenderPolicy.cs" />
+    <Compile Remove="Policies\Gender\MaleGenderPolicy.cs" />
+    <Compile Remove="Policies\Temperature\HighTemperaturePolicy.cs" />
+    <Compile Remove="Policies\Temperature\LowTemperaturePolicy.cs" />
+    <Compile Remove="Factories\PackingListFactory.cs" />
+    <Compile Remove="Factories\IPackingListFactory.cs" />
+    <Compile Remove="Events\PackingItemAdded.cs" />
+    <Compile Remove="Events\PackingItemPacked.cs" />
+    <Compile Remove="Events\PackingItemRemoved.cs" />
+    <Compile Remove="Consts\Constants.cs" />
+    <Compile Remove="Consts\GenderEnum.cs" />
+    <Compile Remove="Entities\PackingList.cs" />
+    <Compile Remove="ValueObjects\Temperature.cs" />
+    <Compile Remove="ValueObjects\PackingListId.cs" />
+    <Compile Remove="ValueObjects\PackingListName.cs" />
+    <Compile Remove="ValueObjects\TravelDays.cs" />
+    <Compile Remove="ValueObjects\Localization.cs" />
+    <Compile Remove="ValueObjects\PackingItem.cs" />
+  </ItemGroup>
 </Project>

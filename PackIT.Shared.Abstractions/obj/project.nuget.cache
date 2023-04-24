@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oSUcdmar9hBoWxL8M1gIJLeFP7ElJTUxLIGPlU2/QaBOq2XOi93JFms7neAZQnqzWekqYtxHt+iMAqw7qXCQlA==",
+  "dgSpecHash": "f3HAZWEKexPLyn1JgVSxz9eJIkHPADEv6dU13IIsF8SrCdISNe3VYgncAIpuTMNPzkNAKWQivpApQq3pphSGEw==",
   "success": true,
-  "projectFilePath": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Shared.Abstractions\\PackIT.Shared.Abstractions.csproj",
+  "projectFilePath": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Shared.Abstractions/PackIT.Shared.Abstractions.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

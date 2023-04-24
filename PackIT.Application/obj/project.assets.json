@@ -429,43 +429,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mpilarcx\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/marcinpilarczyk/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Application\\PackIT.Application.csproj",
+      "projectUniqueName": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Application/PackIT.Application.csproj",
       "projectName": "PackIT.Application",
-      "projectPath": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Application\\PackIT.Application.csproj",
-      "packagesPath": "C:\\Users\\mpilarcx\\.nuget\\packages\\",
-      "outputPath": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Application\\obj\\",
+      "projectPath": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Application/PackIT.Application.csproj",
+      "packagesPath": "/Users/marcinpilarczyk/.nuget/packages/",
+      "outputPath": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Application/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\mpilarcx\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/marcinpilarczyk/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Domain\\PackIT.Domain.csproj": {
-              "projectPath": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Domain\\PackIT.Domain.csproj"
+            "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Domain/PackIT.Domain.csproj": {
+              "projectPath": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Domain/PackIT.Domain.csproj"
             },
-            "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Shared\\PackIT.Shared.csproj": {
-              "projectPath": "C:\\repositories\\personal\\dot_net\\PackIT\\PackIT.Shared\\PackIT.Shared.csproj"
+            "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Shared/PackIT.Shared.csproj": {
+              "projectPath": "/Users/marcinpilarczyk/Projects/dotNet/PackIT/PackIT.Shared/PackIT.Shared.csproj"
             }
           }
         }
@@ -495,7 +487,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.203/RuntimeIdentifierGraph.json"
       }
     }
   }
