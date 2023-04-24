@@ -12,7 +12,6 @@
 
   <ItemGroup>
     <Compile Remove="Repositories\IPackingListRepository.cs" />
-    <Compile Remove="Exceptions\EmptyPackingListItemNameException.cs" />
     <Compile Remove="Exceptions\EmptyPackingListIdException.cs" />
     <Compile Remove="Exceptions\PackingItemAlreadyExistsException.cs" />
     <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
@@ -37,7 +36,6 @@
     <Compile Remove="ValueObjects\PackingListId.cs" />
     <Compile Remove="ValueObjects\PackingListName.cs" />
     <Compile Remove="ValueObjects\TravelDays.cs" />
-    <Compile Remove="ValueObjects\PackingItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="ValueObjects\" />
