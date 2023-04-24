@@ -18,7 +18,6 @@
     <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
     <Compile Remove="Exceptions\InvalidTravelDaysException.cs" />
     <Compile Remove="Exceptions\InvalidTemperatureValuesException.cs" />
-    <Compile Remove="Exceptions\EmptyPackingListNameException.cs" />
     <Compile Remove="Policies\PolicyData.cs" />
     <Compile Remove="Policies\IPackingItemsPolicy.cs" />
     <Compile Remove="Policies\Universal\BasicPolicy.cs" />
@@ -38,7 +37,14 @@
     <Compile Remove="ValueObjects\PackingListId.cs" />
     <Compile Remove="ValueObjects\PackingListName.cs" />
     <Compile Remove="ValueObjects\TravelDays.cs" />
-    <Compile Remove="ValueObjects\Localization.cs" />
     <Compile Remove="ValueObjects\PackingItem.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="ValueObjects\" />
+    <None Remove="Exceptions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ValueObjects\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>
