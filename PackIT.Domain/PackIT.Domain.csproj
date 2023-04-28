@@ -14,9 +14,6 @@
     <Compile Remove="Repositories\IPackingListRepository.cs" />
     <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
     <Compile Remove="Exceptions\InvalidTemperatureValuesException.cs" />
-    <Compile Remove="Policies\PolicyData.cs" />
-    <Compile Remove="Policies\IPackingItemsPolicy.cs" />
-    <Compile Remove="Policies\Universal\BasicPolicy.cs" />
     <Compile Remove="Policies\Gender\FemaleGenderPolicy.cs" />
     <Compile Remove="Policies\Gender\MaleGenderPolicy.cs" />
     <Compile Remove="Policies\Temperature\HighTemperaturePolicy.cs" />
@@ -32,6 +29,10 @@
     <None Remove="Events\" />
     <None Remove="Factories\" />
     <None Remove="Consts\" />
+    <None Remove="Policies\" />
+    <None Remove="Policies\Gender\" />
+    <None Remove="Policies\Temperature\" />
+    <None Remove="Policies\Universal\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ValueObjects\" />
@@ -40,5 +41,9 @@
     <Folder Include="Events\" />
     <Folder Include="Factories\" />
     <Folder Include="Consts\" />
+    <Folder Include="Policies\" />
+    <Folder Include="Policies\Gender\" />
+    <Folder Include="Policies\Temperature\" />
+    <Folder Include="Policies\Universal\" />
   </ItemGroup>
 </Project>
