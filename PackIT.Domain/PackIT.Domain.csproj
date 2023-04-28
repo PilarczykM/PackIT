@@ -12,8 +12,6 @@
 
   <ItemGroup>
     <Compile Remove="Repositories\IPackingListRepository.cs" />
-    <Compile Remove="Exceptions\EmptyPackingListIdException.cs" />
-    <Compile Remove="Exceptions\PackingItemAlreadyExistsException.cs" />
     <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
     <Compile Remove="Exceptions\InvalidTravelDaysException.cs" />
     <Compile Remove="Exceptions\InvalidTemperatureValuesException.cs" />
@@ -32,7 +30,6 @@
     <Compile Remove="Consts\Constants.cs" />
     <Compile Remove="Consts\GenderEnum.cs" />
     <Compile Remove="ValueObjects\Temperature.cs" />
-    <Compile Remove="ValueObjects\PackingListId.cs" />
     <Compile Remove="ValueObjects\PackingListName.cs" />
     <Compile Remove="ValueObjects\TravelDays.cs" />
   </ItemGroup>
