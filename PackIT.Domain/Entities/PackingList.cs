@@ -7,7 +7,7 @@ public class PackingList
 	public Guid Id { get; private set; }
 	private readonly PackingListName _name;
 	private readonly Localization _localization;
-	private readonly LinkedList<PackingItem> _items = ();
+	private readonly LinkedList<PackingItem> _items = new();
 
 	internal PackingList(Guid id, PackingListName name, Localization localization)
 	{
