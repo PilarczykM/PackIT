@@ -24,9 +24,6 @@
     <Compile Remove="Policies\Temperature\LowTemperaturePolicy.cs" />
     <Compile Remove="Factories\PackingListFactory.cs" />
     <Compile Remove="Factories\IPackingListFactory.cs" />
-    <Compile Remove="Events\PackingItemAdded.cs" />
-    <Compile Remove="Events\PackingItemPacked.cs" />
-    <Compile Remove="Events\PackingItemRemoved.cs" />
     <Compile Remove="Consts\Constants.cs" />
     <Compile Remove="Consts\GenderEnum.cs" />
     <Compile Remove="ValueObjects\Temperature.cs" />
@@ -37,10 +34,12 @@
     <None Remove="ValueObjects\" />
     <None Remove="Exceptions\" />
     <None Remove="Entities\" />
+    <None Remove="Events\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ValueObjects\" />
     <Folder Include="Exceptions\" />
     <Folder Include="Entities\" />
+    <Folder Include="Events\" />
   </ItemGroup>
 </Project>

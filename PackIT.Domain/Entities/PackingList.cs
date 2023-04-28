@@ -1,4 +1,6 @@
-﻿using PackIT.Domain.Exceptions;
+﻿using PackIT.Domain.Entities;
+using PackIT.Domain.Events;
+using PackIT.Domain.Exceptions;
 using PackIT.Domain.ValueObjects;
 using PackIT.Shared.Abstractions.Domain;
 
@@ -28,5 +30,35 @@ public class PackingList : AggregateRoot<PackingListId>
         }
 
         _items.AddLast(item);
+        AddEvent(new PackingItemAdded(this, item));
     }
+
+    public void AddItems(IEnumerable<PackingItem> items)
+    {
+        foreach (var item in items)
+        {
+            AddItem(item);
+        }
+    }
+
+    public void PackItem(string itemName)
+    {
+        var item = GetItem(itemName);
+
+        var packedItem = item with { IsPacked = !item.IsPacked }; // Copy of record with changed property.
+
+        _items.Find(item).Value = packedItem;
+        AddEvent(new PackingItemPacked(this, packedItem));
+    }
+
+    public void RemoveItem(string itemName)
+    {
+        var item = GetItem(itemName);
+
+        _items.Remove(item);
+        AddEvent(new PackingItemRemoved(this, item));
+    }
+
+    private PackingItem GetItem(string itemName)
+        => _items.SingleOrDefault(i => i.Name == itemName) ?? throw new PackingItemNotFound(itemName);
 }
