@@ -11,7 +11,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="Repositories\IPackingListRepository.cs" />
     <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
     <Compile Remove="Exceptions\InvalidTemperatureValuesException.cs" />
     <Compile Remove="Policies\Gender\FemaleGenderPolicy.cs" />
@@ -33,6 +32,7 @@
     <None Remove="Policies\Gender\" />
     <None Remove="Policies\Temperature\" />
     <None Remove="Policies\Universal\" />
+    <None Remove="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ValueObjects\" />
@@ -45,5 +45,6 @@
     <Folder Include="Policies\Gender\" />
     <Folder Include="Policies\Temperature\" />
     <Folder Include="Policies\Universal\" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
 </Project>
