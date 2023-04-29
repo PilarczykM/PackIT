@@ -4,7 +4,7 @@ using PackIT.Domain.ValueObjects;
 
 namespace PackIT.Domain.Factories
 {
-    public class PackingListFactory : IPackingListFactory
+    public sealed class PackingListFactory : IPackingListFactory
     {
         public PackingListFactory()
         {
