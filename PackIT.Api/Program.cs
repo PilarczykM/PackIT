@@ -1,5 +1,6 @@
 using PackIT.Application;
 using PackIT.Infrastructure;
+using PackIT.Shared;
 
 namespace PackIT.Api
 {
@@ -12,6 +13,7 @@ namespace PackIT.Api
             // Add services to the container.
 
             builder.Services.AddControllers();
+            builder.Services.AddShared();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
