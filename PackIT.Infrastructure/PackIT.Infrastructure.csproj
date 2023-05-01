@@ -21,6 +21,9 @@
     <None Remove="EF\Configs\" />
     <None Remove="EF\Options\" />
     <None Remove="EF\Queries\" />
+    <None Remove="EF\Repositories\" />
+    <None Remove="EF\Services\" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EF\" />
@@ -29,5 +32,8 @@
     <Folder Include="EF\Configs\" />
     <Folder Include="EF\Options\" />
     <Folder Include="EF\Queries\" />
+    <Folder Include="EF\Repositories\" />
+    <Folder Include="EF\Services\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>
