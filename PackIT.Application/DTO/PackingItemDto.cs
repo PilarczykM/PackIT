@@ -1,5 +1,4 @@
-﻿using System;
-namespace PackIT.Application.DTO
+﻿namespace PackIT.Application.DTO
 {
     public class PackingItemDto
     {
