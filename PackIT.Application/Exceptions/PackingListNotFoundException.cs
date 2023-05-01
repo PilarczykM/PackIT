@@ -1,5 +1,4 @@
-﻿using System;
-using PackIT.Shared.Abstractions.Exceptions;
+﻿using PackIT.Shared.Abstractions.Exceptions;
 
 namespace PackIT.Application.Exceptions
 {
