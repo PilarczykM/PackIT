@@ -26,6 +26,11 @@ public class PackingList : AggregateRoot<PackingListId>
         AddItems(items);
     }
 
+    // For EF
+    private PackingList()
+    {
+    }
+
     public void AddItem(PackingItem item)
     {
         var alreadyExists = _items.Any(i => i.Name == item.Name);

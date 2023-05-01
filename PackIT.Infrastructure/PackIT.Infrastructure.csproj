@@ -10,4 +10,24 @@
     <ProjectReference Include="..\PackIT.Application\PackIT.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Queries\" />
+    <None Remove="Queries\Handlers\" />
+    <None Remove="EF\" />
+    <None Remove="EF\Models\" />
+    <None Remove="EF\Contexts\" />
+    <None Remove="EF\Configs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Queries\" />
+    <Folder Include="Queries\Handlers\" />
+    <Folder Include="EF\" />
+    <Folder Include="EF\Models\" />
+    <Folder Include="EF\Contexts\" />
+    <Folder Include="EF\Configs\" />
+  </ItemGroup>
 </Project>

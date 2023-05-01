@@ -1,4 +1,5 @@
 using PackIT.Application;
+using PackIT.Infrastructure;
 
 namespace PackIT.Api
 {
@@ -16,6 +17,7 @@ namespace PackIT.Api
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddApplication();
+            builder.Services.AddInfrastructure();
 
             var app = builder.Build();
 
