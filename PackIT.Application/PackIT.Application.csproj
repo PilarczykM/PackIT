@@ -11,4 +11,20 @@
     <ProjectReference Include="..\PackIT.Shared\PackIT.Shared.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Commands\" />
+    <None Remove="Commands\Handlers\" />
+    <None Remove="Exceptions\" />
+    <None Remove="Services\" />
+    <None Remove="DTO\" />
+    <None Remove="DTO\External\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Commands\Handlers\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Services\" />
+    <Folder Include="DTO\" />
+    <Folder Include="DTO\External\" />
+  </ItemGroup>
 </Project>
