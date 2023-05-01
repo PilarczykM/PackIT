@@ -1,11 +1,10 @@
-﻿using System;
-using PackIT.Application.Exceptions;
+﻿using PackIT.Application.Exceptions;
 using PackIT.Domain.Repositories;
 using PackIT.Shared.Abstractions.Commands;
 
 namespace PackIT.Application.Commands.Handlers
 {
-    public class RemovePackingItemHandler : ICommandHandler<RemovePackingItem>
+    internal sealed class RemovePackingItemHandler : ICommandHandler<RemovePackingItem>
     {
         private readonly IPackingListRepository _packingListRepository;
         public RemovePackingItemHandler(IPackingListRepository packingListRepository)

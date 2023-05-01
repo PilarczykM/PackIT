@@ -1,6 +1,5 @@
 ﻿using PackIT.Application.Exceptions;
 using PackIT.Domain.Repositories;
-using PackIT.Domain.ValueObjects;
 using PackIT.Shared.Abstractions.Commands;
 
 namespace PackIT.Application.Commands.Handlers
