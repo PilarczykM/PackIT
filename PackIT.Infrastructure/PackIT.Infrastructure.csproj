@@ -21,6 +21,7 @@
     <None Remove="EF\Models\" />
     <None Remove="EF\Contexts\" />
     <None Remove="EF\Configs\" />
+    <None Remove="EF\Options\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Queries\" />
@@ -29,5 +30,6 @@
     <Folder Include="EF\Models\" />
     <Folder Include="EF\Contexts\" />
     <Folder Include="EF\Configs\" />
+    <Folder Include="EF\Options\" />
   </ItemGroup>
 </Project>
