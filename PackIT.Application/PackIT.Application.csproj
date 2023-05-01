@@ -18,6 +18,7 @@
     <None Remove="Services\" />
     <None Remove="DTO\" />
     <None Remove="DTO\External\" />
+    <None Remove="Queries\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
@@ -26,5 +27,6 @@
     <Folder Include="Services\" />
     <Folder Include="DTO\" />
     <Folder Include="DTO\External\" />
+    <Folder Include="Queries\" />
   </ItemGroup>
 </Project>
