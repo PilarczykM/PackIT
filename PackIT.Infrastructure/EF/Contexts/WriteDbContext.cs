@@ -21,10 +21,10 @@ namespace PackIT.Infrastructure.EF.Contexts
         {
             modelBuilder.HasDefaultSchema("packing");
 
-            var writeConfiguration = new WriteConfiguration();
+            var configuration = new WriteConfiguration();
 
-            modelBuilder.ApplyConfiguration<PackingList>(writeConfiguration);
-            modelBuilder.ApplyConfiguration<PackingItem>(writeConfiguration);
+            modelBuilder.ApplyConfiguration<PackingList>(configuration);
+            modelBuilder.ApplyConfiguration<PackingItem>(configuration);
         }
     }
 }
