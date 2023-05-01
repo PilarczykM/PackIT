@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using PackIT.Domain.Factories;
 using PackIT.Domain.Policies;
 using PackIT.Shared.Commands;
@@ -11,6 +10,7 @@ namespace PackIT.Application
         public static IServiceCollection AddApplication(this IServiceCollection services)
         {
             services.AddCommands();
+
             services.AddSingleton<IPackingListFactory, PackingListFactory>();
 
             services.Scan(s => s.FromAssemblies(typeof(IPackingItemsPolicy).Assembly)
