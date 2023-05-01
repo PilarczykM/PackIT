@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PackIT.Domain.ValueObjects;
+﻿namespace PackIT.Domain.ValueObjects;
 
 public record Localization(string City, string Country)
 {
