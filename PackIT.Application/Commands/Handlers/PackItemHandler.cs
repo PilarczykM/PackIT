@@ -1,23 +1,22 @@
-﻿using System.Xml.Linq;
-using PackIT.Application.Exceptions;
+﻿using PackIT.Application.Exceptions;
 using PackIT.Domain.Repositories;
 using PackIT.Domain.ValueObjects;
 using PackIT.Shared.Abstractions.Commands;
 
 namespace PackIT.Application.Commands.Handlers
 {
-    internal sealed class AddPackingItemHandler : ICommandHandler<AddPackingItem>
+    internal sealed class PackItemHandler : ICommandHandler<PackItem>
     {
         private readonly IPackingListRepository _packingListRepository;
-
-        public AddPackingItemHandler(IPackingListRepository packingListRepository)
+        public PackItemHandler(IPackingListRepository packingListRepository)
         {
             _packingListRepository = packingListRepository;
         }
 
-        public async Task HandleAsync(AddPackingItem command)
+        public async Task HandleAsync(PackItem command)
         {
-            var (packingListId, name, quantity) = command;
+            var (packingListId, itemName) = command;
+
             var packingList = await _packingListRepository.GetAsync(packingListId);
 
             if (packingList is null)
@@ -25,8 +24,7 @@ namespace PackIT.Application.Commands.Handlers
                 throw new PackingListNotFoundException(packingListId);
             }
 
-            packingList.AddItem(new PackingItem(name, quantity));
-
+            packingList.PackItem(itemName);
             await _packingListRepository.UpdateAsync(packingList);
         }
     }

@@ -10,7 +10,7 @@ using PackIT.Application.Services;
 
 namespace PackIT.Application.Commands.Handlers
 {
-    public class CreatePackingListWIthItemsHandler : ICommandHandler<CreatePackingListWIthItems>
+    internal sealed class CreatePackingListWIthItemsHandler : ICommandHandler<CreatePackingListWIthItems>
     {
         private readonly IPackingListFactory _packingListFactory;
         private readonly IPackingListRepository _packingListRepository;
