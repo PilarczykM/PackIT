@@ -19,7 +19,7 @@ namespace PackIT.Infrastructure.EF.Queries
                 Items = readModel.Items?.Select(pi => new PackingItemDto
                 {
                     Name = pi.Name,
-                    Quentity = pi.Quentity,
+                    Quantity = pi.Quantity,
                     IsPacked = pi.IsPacked
                 })
             };
