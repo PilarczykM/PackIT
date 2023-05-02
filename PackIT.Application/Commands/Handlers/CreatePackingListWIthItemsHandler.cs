@@ -26,9 +26,7 @@ namespace PackIT.Application.Commands.Handlers
         {
             var (id, name, days, gender, localizationWriteModel) = command;
 
-            var exists = await _packingListReadService.ExistsByNameAsync(name);
-
-            if (exists)
+            if (await _packingListReadService.ExistsByNameAsync(name))
             {
                 throw new PackingListAlreadyExistsException(name);
             }
