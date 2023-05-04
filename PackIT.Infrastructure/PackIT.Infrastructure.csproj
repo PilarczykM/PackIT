@@ -20,6 +20,7 @@
     <None Remove="EF\Repositories\" />
     <None Remove="EF\Services\" />
     <None Remove="Services\" />
+    <None Remove="Logging\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="EF\" />
@@ -31,5 +32,6 @@
     <Folder Include="EF\Repositories\" />
     <Folder Include="EF\Services\" />
     <Folder Include="Services\" />
+    <Folder Include="Logging\" />
   </ItemGroup>
 </Project>
