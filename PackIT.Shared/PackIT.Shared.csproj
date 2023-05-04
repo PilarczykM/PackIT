@@ -25,11 +25,13 @@
     <None Remove="Queries\" />
     <None Remove="Options\" />
     <None Remove="Services\" />
+    <None Remove="Exceptions\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Commands\" />
     <Folder Include="Queries\" />
     <Folder Include="Options\" />
     <Folder Include="Services\" />
+    <Folder Include="Exceptions\" />
   </ItemGroup>
 </Project>
