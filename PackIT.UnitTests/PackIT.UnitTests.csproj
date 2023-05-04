@@ -27,10 +27,12 @@
   <ItemGroup>
     <None Remove="Domain\" />
     <None Remove="Application\" />
+    <None Remove="Domain\Entities\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
     <Folder Include="Application\" />
+    <Folder Include="Domain\Entities\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PackIT.Domain\PackIT.Domain.csproj" />
