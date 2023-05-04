@@ -19,6 +19,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Shared", "PackIT.Sha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.Shared.Abstractions", "PackIT.Shared.Abstractions\PackIT.Shared.Abstractions.csproj", "{4FDB4FF9-3487-4548-980E-1E8A240BAE6A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testing", "testing", "{1336F2FD-030A-4DA8-8B45-7FA9A8D85C5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackIT.UnitTests", "PackIT.UnitTests\PackIT.UnitTests.csproj", "{2FDC9736-3F91-4477-A86A-D3D9520F3A53}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +53,10 @@ Global
 		{4FDB4FF9-3487-4548-980E-1E8A240BAE6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FDB4FF9-3487-4548-980E-1E8A240BAE6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FDB4FF9-3487-4548-980E-1E8A240BAE6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FDC9736-3F91-4477-A86A-D3D9520F3A53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FDC9736-3F91-4477-A86A-D3D9520F3A53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FDC9736-3F91-4477-A86A-D3D9520F3A53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FDC9736-3F91-4477-A86A-D3D9520F3A53}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +69,7 @@ Global
 		{77C4CBBF-5C54-45DC-B6E7-71B5DFA0F909} = {EBC79781-4B16-4B73-A174-21A0BB5A92EC}
 		{E94D4C49-97FF-49D9-9543-3DE317A968EB} = {4F9A2559-70F0-44BD-B020-7CC3C1276A65}
 		{4FDB4FF9-3487-4548-980E-1E8A240BAE6A} = {4F9A2559-70F0-44BD-B020-7CC3C1276A65}
+		{2FDC9736-3F91-4477-A86A-D3D9520F3A53} = {1336F2FD-030A-4DA8-8B45-7FA9A8D85C5D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {77C3F9E5-B712-435F-B4A8-F7F320952FF2}
