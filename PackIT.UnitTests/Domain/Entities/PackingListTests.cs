@@ -99,7 +99,7 @@ public class PackingListTests
 
         //ASSERT
         exception.ShouldBeNull();
-        packingList.Events.Count().ShouldBe(listOfItems.Count());
+        packingList.Events.Count().ShouldBe(listOfItems.Count);
 
         var @events = packingList.Events;
         var packingItemNames = listOfItems.Select(i => i.Name);

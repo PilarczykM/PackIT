@@ -16,7 +16,7 @@ namespace PackIT.Infrastructure.EF.Queries
                     City = readModel.Localization.City,
                     Country = readModel.Localization.Country
                 },
-                Items = readModel.Items?.Select(pi => new PackingItemDto
+                Items = readModel.Items.Select(pi => new PackingItemDto
                 {
                     Name = pi.Name,
                     Quantity = pi.Quantity,

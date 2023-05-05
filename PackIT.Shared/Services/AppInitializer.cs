@@ -22,9 +22,7 @@ namespace PackIT.Shared.Services
 
             foreach (var dbContextType in dbContextTypes)
             {
-                var dbContext = scope.ServiceProvider.GetRequiredService(dbContextType) as DbContext;
-
-                if (dbContext is null)
+                if (scope.ServiceProvider.GetRequiredService(dbContextType) is not DbContext dbContext)
                 {
                     continue;
                 }

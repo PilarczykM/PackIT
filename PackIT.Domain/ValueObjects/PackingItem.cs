@@ -15,6 +15,6 @@ public record PackingItem
 
         Name = name;
         Quantity = quantity;
-        IsPacked = IsPacked;
+        IsPacked = isPacked;
     }
 }

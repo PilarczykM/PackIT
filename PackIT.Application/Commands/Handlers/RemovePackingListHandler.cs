@@ -14,12 +14,8 @@ namespace PackIT.Application.Commands.Handlers
 
         public async Task HandleAsync(RemovePackingList command)
         {
-            var packingList = await _packingListRepository.GetAsync(command.PackingListId);
-
-            if (packingList is null)
-            {
+            var packingList = await _packingListRepository.GetAsync(command.PackingListId) ??
                 throw new PackingListNotFoundException(command.PackingListId);
-            }
 
             await _packingListRepository.DeleteAsync(packingList);
         }

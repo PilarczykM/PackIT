@@ -32,12 +32,9 @@ namespace PackIT.Application.Commands.Handlers
             }
 
             var localization = new Localization(localizationWriteModel.City, localizationWriteModel.Country);
-            var weather = await _weatherService.GetWeatherAsync(localization);
 
-            if (weather is null)
-            {
+            var weather = await _weatherService.GetWeatherAsync(localization) ??
                 throw new MissingLocalizationWeatherException(localization);
-            }
 
             var packingList = _packingListFactory
                 .CreateWithDefaultItems(id, name, days, gender, weather.Temperature, localization);

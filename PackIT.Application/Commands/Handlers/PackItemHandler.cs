@@ -16,12 +16,8 @@ namespace PackIT.Application.Commands.Handlers
         {
             var (packingListId, itemName) = command;
 
-            var packingList = await _packingListRepository.GetAsync(packingListId);
-
-            if (packingList is null)
-            {
+            var packingList = await _packingListRepository.GetAsync(packingListId) ??
                 throw new PackingListNotFoundException(packingListId);
-            }
 
             packingList.PackItem(itemName);
             await _packingListRepository.UpdateAsync(packingList);
