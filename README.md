@@ -9,7 +9,7 @@ As the name suggests, it is an application that supports travelers in packing!
 * Scrutor
 * Npgsql
 
-## Metodologies:
+## Methodologies:
 * Clean Architecture
 * CQRS
 * DI
