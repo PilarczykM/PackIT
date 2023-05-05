@@ -104,7 +104,7 @@ public class PackingListTests
         var @events = packingList.Events;
         var packingItemNames = listOfItems.Select(i => i.Name);
 
-        foreach (PackingItemAdded @event in events)
+        foreach (var @event in events.Cast<PackingItemAdded>())
         {
             @event.ShouldNotBeNull();
             @event.ShouldBeOfType<PackingItemAdded>();
