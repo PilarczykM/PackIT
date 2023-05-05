@@ -3,6 +3,7 @@
 As the name suggests, it is an application that supports travelers in packing!
 
 ### Business requirements
+
 * User is able to create PackingList
 * User is required to provide information about:
   * Name
@@ -18,13 +19,16 @@ As the name suggests, it is an application that supports travelers in packing!
 * User has ability to remove list.
 
 ## Technologies
+
 * .Net Core
 
 ## Tools
+
 * Scrutor
 * Npgsql
 
-## Methodologies:
+## Methodologies
+
 * Clean Architecture
 * CQRS
 * DI
