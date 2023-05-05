@@ -1,3 +1,15 @@
 # PackIT
 
-https://www.youtube.com/watch?v=NzcZcim9tp8
+As the name suggests, it is an application that supports travelers in packing!
+
+## Technologies
+* .Net Core
+
+## Tools
+* Scrutor
+* Npgsql
+
+## Metodologies:
+* Clean Architecture
+* CQRS
+* DI
