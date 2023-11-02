@@ -18,7 +18,7 @@ namespace PackIT.Application.Commands.Handlers
 
             var packingList = await _packingListRepository.GetAsync(packingListId) ??
             throw new PackingListNotFoundException(packingListId);
-            
+
             packingList.RemoveItem(itemName);
 
             await _packingListRepository.UpdateAsync(packingList);

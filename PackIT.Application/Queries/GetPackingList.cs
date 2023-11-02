@@ -8,4 +8,3 @@ namespace PackIT.Application.Queries
         public Guid Id { get; set; }
     }
 }
-

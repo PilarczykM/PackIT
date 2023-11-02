@@ -9,42 +9,4 @@
   <ItemGroup>
     <ProjectReference Include="..\PackIT.Shared.Abstractions\PackIT.Shared.Abstractions.csproj" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="Exceptions\PackingItemNotFoundException.cs" />
-    <Compile Remove="Exceptions\InvalidTemperatureValuesException.cs" />
-    <Compile Remove="Policies\Gender\FemaleGenderPolicy.cs" />
-    <Compile Remove="Policies\Gender\MaleGenderPolicy.cs" />
-    <Compile Remove="Policies\Temperature\HighTemperaturePolicy.cs" />
-    <Compile Remove="Policies\Temperature\LowTemperaturePolicy.cs" />
-    <Compile Remove="Consts\Constants.cs" />
-    <Compile Remove="Consts\GenderEnum.cs" />
-    <Compile Remove="ValueObjects\PackingListName.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="ValueObjects\" />
-    <None Remove="Exceptions\" />
-    <None Remove="Entities\" />
-    <None Remove="Events\" />
-    <None Remove="Factories\" />
-    <None Remove="Consts\" />
-    <None Remove="Policies\" />
-    <None Remove="Policies\Gender\" />
-    <None Remove="Policies\Temperature\" />
-    <None Remove="Policies\Universal\" />
-    <None Remove="Repositories\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ValueObjects\" />
-    <Folder Include="Exceptions\" />
-    <Folder Include="Entities\" />
-    <Folder Include="Events\" />
-    <Folder Include="Factories\" />
-    <Folder Include="Consts\" />
-    <Folder Include="Policies\" />
-    <Folder Include="Policies\Gender\" />
-    <Folder Include="Policies\Temperature\" />
-    <Folder Include="Policies\Universal\" />
-    <Folder Include="Repositories\" />
-  </ItemGroup>
 </Project>

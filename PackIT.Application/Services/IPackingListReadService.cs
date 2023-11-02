@@ -5,4 +5,3 @@
         Task<bool> ExistsByNameAsync(string name);
     }
 }
-
