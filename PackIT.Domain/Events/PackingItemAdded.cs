@@ -5,7 +5,6 @@ using PackIT.Shared.Abstractions.Domain;
 namespace PackIT.Domain.Events
 {
     public record PackingItemAdded(PackingList PackingList, PackingItem PackingItem) : IDomainEvent
-    {
-    }
+    { }
 }
 

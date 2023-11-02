@@ -8,4 +8,3 @@ namespace PackIT.Application.Queries
         public string? SearchTerm { get; set; }
     }
 }
-

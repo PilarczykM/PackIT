@@ -2,4 +2,3 @@
 {
     public record WeatherDto(double Temperature);
 }
-

@@ -8,4 +8,3 @@
         public IEnumerable<PackingItemDto> Items { get; set; }
     }
 }
-

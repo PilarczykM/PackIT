@@ -4,4 +4,3 @@ namespace PackIT.Application.Commands
 {
     public record RemovePackingList(Guid PackingListId) : ICommand;
 }
-

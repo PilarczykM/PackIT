@@ -8,4 +8,3 @@ namespace PackIT.Application.Services
         Task<WeatherDto> GetWeatherAsync(Localization localization);
     }
 }
-
