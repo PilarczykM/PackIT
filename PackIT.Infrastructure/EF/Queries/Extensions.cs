@@ -26,4 +26,3 @@ namespace PackIT.Infrastructure.EF.Queries
         }
     }
 }
-

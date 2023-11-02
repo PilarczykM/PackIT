@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using PackIT.Domain.Entity;
 using PackIT.Domain.ValueObjects;
 using PackIT.Infrastructure.EF.Configs;
@@ -28,4 +29,3 @@ namespace PackIT.Infrastructure.EF.Contexts
         }
     }
 }
-

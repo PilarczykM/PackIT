@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using PackIT.Application.Services;
 using PackIT.Infrastructure.EF.Contexts;
 using PackIT.Infrastructure.EF.Models;
@@ -18,4 +19,3 @@ namespace PackIT.Infrastructure.EF.Services
             => _packingLists.AnyAsync(pl => pl.Name == name);
     }
 }
-

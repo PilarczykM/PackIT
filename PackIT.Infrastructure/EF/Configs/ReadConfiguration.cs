@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+
 using PackIT.Infrastructure.EF.Models;
 
 namespace PackIT.Infrastructure.EF.Configs
@@ -27,4 +28,3 @@ namespace PackIT.Infrastructure.EF.Configs
         }
     }
 }
-
