@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+
 using PackIT.Shared.Abstractions.Commands;
 
 namespace PackIT.Infrastructure.Logging
@@ -33,4 +34,3 @@ namespace PackIT.Infrastructure.Logging
         }
     }
 }
-

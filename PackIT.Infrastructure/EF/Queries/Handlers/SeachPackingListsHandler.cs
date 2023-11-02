@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using PackIT.Application.DTO;
 using PackIT.Application.Queries;
 using PackIT.Infrastructure.EF.Contexts;
@@ -36,4 +37,3 @@ namespace PackIT.Infrastructure.EF.Queries.Handlers
         }
     }
 }
-

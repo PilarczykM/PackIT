@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+
 using PackIT.Domain.Entity;
 using PackIT.Domain.ValueObjects;
 
@@ -49,4 +50,3 @@ namespace PackIT.Infrastructure.EF.Configs
         }
     }
 }
-

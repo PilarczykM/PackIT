@@ -1,23 +1,21 @@
-﻿namespace PackIT.Infrastructure.EF.Models
+﻿namespace PackIT.Infrastructure.EF.Models;
+
+internal class LocalizationReadModel
 {
-    internal class LocalizationReadModel
+    public string City { get; set; }
+    public string Country { get; set; }
+
+    public static LocalizationReadModel Create(string value)
     {
-        public string City { get; set; }
-        public string Country { get; set; }
+        var splitLocalization = value.Split(",");
 
-        public static LocalizationReadModel Create(string value)
+        return new LocalizationReadModel()
         {
-            var splitLocalization = value.Split(",");
-
-            return new LocalizationReadModel()
-            {
-                City = splitLocalization.First(),
-                Country = splitLocalization.Last()
-            };
-        }
-
-        public override string ToString()
-            => $"{City},{Country}";
+            City = splitLocalization.First(),
+            Country = splitLocalization.Last()
+        };
     }
-}
 
+    public override string ToString()
+        => $"{City},{Country}";
+}

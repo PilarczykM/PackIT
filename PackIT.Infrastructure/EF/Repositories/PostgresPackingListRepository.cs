@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using PackIT.Domain.Entity;
 using PackIT.Domain.Repositories;
 using PackIT.Domain.ValueObjects;
@@ -29,10 +30,9 @@ namespace PackIT.Infrastructure.EF.Repositories
             await _writeDbContext.SaveChangesAsync();
         }
 
-        public Task<PackingList> GetAsync(PackingListId id)
-            => _packingList
-            .Include("_items")
-            .SingleOrDefaultAsync(pl => pl.Id == id);
+        public Task<PackingList> GetAsync(PackingListId id) => _packingList
+                    .Include("_items")
+                    .SingleOrDefaultAsync(pl => pl.Id == id);
 
         public async Task UpdateAsync(PackingList packingList)
         {
@@ -41,4 +41,3 @@ namespace PackIT.Infrastructure.EF.Repositories
         }
     }
 }
-
