@@ -2,7 +2,6 @@
 
 public abstract class PackItException : Exception
 {
-	protected PackItException(string message) : base(message)
-	{
-	}
+    protected PackItException(string message) : base(message)
+    { }
 }

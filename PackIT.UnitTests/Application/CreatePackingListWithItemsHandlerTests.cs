@@ -1,4 +1,5 @@
 ﻿using NSubstitute;
+
 using PackIT.Application.Commands;
 using PackIT.Application.Commands.Handlers;
 using PackIT.Application.DTO.External;
@@ -89,4 +90,3 @@ namespace PackIT.UnitTests.Application
         }
     }
 }
-
